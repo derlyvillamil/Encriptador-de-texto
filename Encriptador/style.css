@@ -1,0 +1,114 @@
+* { 
+    margin: 0;
+    padding:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(4, 4, 112);
+}
+.header {
+    padding: 20px 0 10px 30px;    
+}
+
+body {
+    background-color: rgb(226, 197, 253); 
+}
+
+.box{
+    padding-left: 6%;
+    background-color: rgb(226, 197, 253);     
+    display: flex;
+    max-width: 900px;
+    margin:10px;        
+}
+
+.box p{
+    padding-top: 10%;
+    color:rgb(4, 4, 112);
+}
+
+.text-input{    
+    background-color:rgb(226, 197, 253); 
+    border-color: rgb(226, 197, 253); 
+    width: 700px;
+    height: 300px;
+    margin: 50px 0 0 50px;
+    font-size: 30px;
+}
+
+.placeholder{
+    color: rgb(4, 4, 112);
+}
+
+.mensajebox{
+    background-color: white;
+    margin-left: 20%;
+    padding-top: 3%;    
+    border-radius: 20px;    
+}
+.mensajebox h3{
+text-align: center;
+color:white;
+}
+
+.text-input-salida{
+    border-radius: 5px 5px;  
+    border-color: white;
+    width: 280px;
+    height: 300px;
+    font-size: 30px;
+    padding:0 10px 0 10px ;
+}
+
+.boton {
+   padding: 10px  50px;
+   color:blue;
+   background: rgb(226, 197, 253);
+   border-radius: 10px 10px;
+   border-color:rgb(4, 4, 112);
+}
+
+#boton-encriptar{
+    background:rgb(4, 4, 112); 
+    color:white;
+    padding: 10px  60px;
+}
+
+.botoncopy  {
+    padding: 10px 70px;
+    border-radius: 10px 10px;
+    border-color:rgb(4, 4, 112);  
+    background: white;
+ }
+
+ .textoright{
+    background-color: white;        
+    text-align: center;
+    max-width: 280px; 
+    height: 180px;
+    border-radius: 10px 10px;   
+    }
+
+.textoright p{
+    font-size: 12px;
+    padding: 10px;
+    color:rgb(4, 4, 112);
+}
+
+.textodown{
+    background-color:rgb(226, 197, 253);   
+    max-width: 800px;   
+    margin: 0 0 0 50px;       
+}
+
+.textodown p{
+    font-size: 12px;
+    color:rgb(4, 4, 112);
+}
+
+#boton-encriptar{
+    margin-right: 20px;
+}
+
+footer{
+    text-align: center;
+    padding: 30px 0 20px 0;
+}

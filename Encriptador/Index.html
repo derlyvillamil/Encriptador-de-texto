@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="header__nav">
+      <img class="header__nav--logo" src="Vector.png">
+    </nav>
+  </header>
+    <section class="box">      
+      <form action="">               
+        <textarea class="text-input" type="text" name="input-texto" id="input-texto" placeholder="Ingrese el texto aqui"></textarea>
+        <br>
+        <div class="textodown">
+        <p>Solo letras minúsculas y sin acentos!!</p>
+        <br>
+        <button class="boton" type="button" value="Encriptar" id="boton-encriptar">Encriptar</button>
+        <button class="boton" type="button" value="Desencriptar" id="boton-desencriptar">Desencriptar</button>
+        </div>
+      </form>
+
+      <section class="mensajebox">        
+        <textarea class="text-input-salida" type="text" id="mensaje"></textarea>
+        <div class="textoright">
+        <h3>Ningun mensaje fue encontrado</h3>
+        <p>Ingrese el texto que desee encriptar o desencriptar</p>
+        <br>
+        <button class="botoncopy" type="button" value="copiar" id="boton-copy">Copiar</button>
+       
+      </div>
+      </section>
+    </section>
+
+  <script>
+    
+    function encriptar (){
+        var texto = document.querySelector("#input-texto").value;
+        var textoencriptado = texto.replace(/e/gi, "enter").replace(/i/gi, "imes").replace(/a/gi, "ai").replace(/o/gi, "ober").replace(/u/gi, "ufat");
+        document.querySelector(".text-input-salida").value = textoencriptado;
+        document.querySelector("#input-texto").value;
+        }
+    
+    var boton1 = document.querySelector("#boton-encriptar"); boton1.onclick = encriptar;
+    
+    function desencriptar (){ 
+        var texto = document.querySelector("#input-texto").value; 
+        var textoencriptado = texto.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u"); 
+        document.querySelector(".text-input-salida").value = textoencriptado; 
+        document.querySelector("#input-texto").value;    
+    }
+    
+    var boton2 = document.querySelector("#boton-desencriptar"); 
+    boton2.onclick = desencriptar;    
+
+
+
+    function copy() {
+    let copyText = document.querySelector(".text-input-salida");
+    copyText.select();
+    document.execCommand("copy");
+    }
+
+    var boton3 = document.querySelector("#boton-copy").addEventListener("click", copy);
+    
+  </script>
+  <footer class="footer">Diseñado por <a href="https://www.aluracursos.com/" target="_blank">Alura</a>. Codigo hecho por
+    <a href="https://www.linkedin.com/in/derlyvillamil/" target="_blank"> Derly Villamil</a>
+  </footer>
+  
+</body>
+</html>
+
